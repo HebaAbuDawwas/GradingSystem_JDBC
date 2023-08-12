@@ -5,7 +5,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "students")
-public class Student {
+public class Student implements java.io.Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
